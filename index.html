@@ -6,21 +6,48 @@
   </head>
   <body>
     <script src="scripts/main.js"></script>
+    <div class="Menu">
+      <ul class="topnav" id="myTopnav">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Pictures">Pictures</a></li>
+        <li><a href="#Userinformation">Userinformation</a></li>
+        <li><a href="#Finduser">Find Users</a></li>
+        <li class="floatright"><a href="#Login">Login</a></li>
+        <li class="floatright"><a href="#Register">Register</a></li>
+        <li class="icon">
+          <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+        </li>
+      </ul>
+    </div>
+
 
     <!--TODO= Lägga till hashmap för födelsedatum -->
     <!--TODO= Lägga till hashmap för adresser -->
+    <!--TODO= Lägga till inlogg/registrering via google och facebook(Kan endast göras när hemsidan har egen domän.) -->
     <div class="Register">
       <form action="action_page.php" method="post">
         First Name:<br>
-        <input type="text" name="firstname"><br>
+        <input type="text" name="firstname" required><br>
         Last Name:<br>
-        <input type="text" name="lastname"><br>
+        <input type="text" name="lastname" required><br>
         Email Address:<br>
-        <input type="text" name="emailaddress"><br>
+        <input type="text" name="emailaddress" required><br>
+        Password:<br>
+        <input type="password" name="password" required><br>
         <input type="radio" name="gender" value="male" checked> Male<br>
         <input type="radio" name="gender" value="female"> Female<br>
         <input type="radio" name="gender" value="other"> Other<br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Register">
+      </form>
+    </div>
+
+    <div class="Login">
+      <form method="post">
+        Email Address:<br>
+        <input type="text" name="emailaddress" required><br>
+        Password:<br>
+        <input type="password" name="password" required><br>
+        <input type="submit" value="Login">
       </form>
     </div>
   </body>
