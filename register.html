@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <script src="scripts/main.js"></script>
+    <div class="Menu">
+      <ul class="topnav" id="myTopnav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#Pictures">Pictures</a></li>
+        <li><a href="#Userinformation">Userinformation</a></li>
+        <li><a href="#Finduser">Find Users</a></li>
+        <li class="floatright"><a href="#Showname">Nameof signed in user</a></li>
+        <li class="floatright"><a href="login.html">Login</a></li>
+        <li class="floatright"><a href="register.html">Register</a></li>
+        <li class="icon">
+          <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+        </li>
+      </ul>
+    </div>
+    <!--TODO= Lägga till hashmap för födelsedatum -->
+    <!--TODO= Lägga till hashmap för adresser -->
+    <!--TODO= Lägga till inlogg/registrering via google och facebook(Kan endast göras när hemsidan har egen domän.) -->
+    <div class="Register">
+      <form action="action_page.php" method="post">
+        First Name:<br>
+        <input type="text" name="firstname" required><br>
+        Last Name:<br>
+        <input type="text" name="lastname" required><br>
+        Email Address:<br>
+        <input type="email" name="emailaddress" required><br>
+        Password:<br>
+        <input type="password" name="password" required><br>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other<br>
+        <input type="checkbox"><label for="send_updates">Send me email updates</label><br>
+        <input type="submit" value="Register">
+      </form>
+    </div>
+  </body>
+</html>
