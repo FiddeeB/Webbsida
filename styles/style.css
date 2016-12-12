@@ -61,7 +61,7 @@ body {
 
 /*Login form*/
 div.Login {
-  background-color: #808080;
+  background-color: #f3e5ab;
   margin-right: 5px;
   margin-top: 5px;
 }
@@ -69,7 +69,7 @@ div.Login {
 
 /*Register form*/
 div.Register {
-  background-color: #808080;
+  background-color: #f3e5ab;
   margin-left: 5px;
   margin-top: 5px;
 }
